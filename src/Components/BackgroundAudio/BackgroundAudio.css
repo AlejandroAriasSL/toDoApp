@@ -28,15 +28,3 @@
     align-self: end;
     cursor: pointer;
 }
-.display {
-    position: absolute;
-    top: 45px;
-    right: 436px;
-    width: 2.5rem;
-    height: 2.7rem;
-    background-image: url("../../assets/img/display.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-self: end;
-    cursor: pointer;
-}
