@@ -1,0 +1,20 @@
+.container {
+    display: grid;
+    row-gap: 1rem;
+    padding: 2.5rem;
+    background-color: #fff;
+    box-shadow: 3px 1px 7px;
+  }
+  .toggle-character {
+    border-radius:  4.5rem;
+    padding: 2.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("./assets/img/nika-silloute.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 5;
+    align-self: end;
+    justify-self: center;
+    cursor: pointer;
+  }

@@ -18,7 +18,6 @@ export function BackgroundAudio () {
     }, [])
 
 
-
     const handleClick = () => {
         if (!audioRef.current.paused) {
             audioRef.current.pause();
@@ -50,7 +49,7 @@ export function BackgroundAudio () {
         <audio ref={audioRef} autoPlay loop>
             <source type="audio/mpeg" src={audio}></source>
         </audio>
-        <span className="display" ref={eyeRef}></span>
+        <span className="display" ref={eyeRef} role="button"></span>
         <div className="audio-container" onMouseLeave={handleVolumeButtonLeave}>
             <span ref={buttonRef} onMouseEnter={handleVolumeButtonHover} className="audio" role="button" onClick={handleClick}></span>
             {isVolumeVisible &&
