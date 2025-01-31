@@ -1,0 +1,89 @@
+.lists {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 400px;
+    width: 100%;
+    overflow-y:scroll;
+    -webkit-mask: linear-gradient(
+        180deg,
+        transparent,
+        white 1%,
+        white 99%,
+        transparent
+    );
+    mask: linear-gradient(180deg, trasparent, white 1%, white 99%, transparent);
+    scrollbar-width: none;
+}
+.todo{
+    display: flex;
+    place-self: center;
+    width: 90%;
+    justify-content: space-between;
+    background-color: #efefee;
+    padding: 0.9rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo:hover{
+    animation-duration: 5s;
+    animation-name: spin;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background-color: #e3e3e3;
+}
+.todo-txt{
+    text-align: start;
+    overflow-wrap: break-word;
+    width: 70%;
+    max-width: 45ch;
+    color: #636363;
+}
+.todo-icons{
+    width: 30%;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.remove {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("../../assets/img/trashIcon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fav {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("../../assets/img/fav.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3px;
+}
+
+@keyframes spin{
+    0% {
+        scale: 1;
+        transform: rotate(0deg);
+    }
+    25%{
+        scale: 1;
+        transform: rotate(1deg);
+    }
+    50%{
+        scale: 1;
+        transform: rotate(0deg);
+    }
+    75% {
+        scale: 1;
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
