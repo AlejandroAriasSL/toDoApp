@@ -5,6 +5,8 @@
     height: 400px;
     width: 100%;
     overflow-y:scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     -webkit-mask: linear-gradient(
         180deg,
         transparent,
@@ -13,7 +15,6 @@
         transparent
     );
     mask: linear-gradient(180deg, trasparent, white 1%, white 99%, transparent);
-    scrollbar-width: none;
 }
 .todo{
     display: flex;
